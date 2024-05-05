@@ -1,1 +1,15 @@
 <p>data-binding works!</p>
+
+<p>{{ message }}</p>
+<button (click)="changerMessage()">Changer le message</button><br>
+
+
+<button type="button" class="btn btn -info">Primary</button>
+<div [style.backgroundColor]="color">
+  Color
+  </div>
+
+  <input type="text" #name [value]="getName()"><br>
+  <input type="text" [value]="getSuName()"><br>
+
+  <button class="btn btn-success" (click)="updateName(name.value)">update</button>
